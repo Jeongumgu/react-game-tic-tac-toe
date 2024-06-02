@@ -24,8 +24,8 @@ function deriveActivePlayer(gameTurns) {
 
 function App() {
   const [ players, setPlayers] = useState({
-    X: 'Player 1',
-    O: 'Player 2'
+    X: '플레이어 1',
+    O: '플레이어 2'
   })
   const [gameTurns, setGameTurns] = useState([]);
   // const [hasWinnder, setHasWinner] = useState(false);
@@ -57,7 +57,7 @@ function App() {
       firstSqeuareSymbol === secondSqeuareSymbol &&
       firstSqeuareSymbol === thirdSqeuareSymbol
     ) {
-      winner = firstSqeuareSymbol;
+      winner = players[firstSqeuareSymbol];
     }
   }
 
@@ -97,11 +97,13 @@ function App() {
             initialName="플레이어 1"
             symbol="X"
             isActive={activePlayer === "X"}
+            onChangeName={handlePlayerNameChange}
           ></Player>
           <Player
             initialName="플레이어 2"
             symbol="O"
             isActive={activePlayer === "O"}
+            onChangeName={handlePlayerNameChange}
           ></Player>
         </ol>
         {(winner || hasDraw) && <GameOver winner={winner} onRestart={handleRestart}></GameOver>}
