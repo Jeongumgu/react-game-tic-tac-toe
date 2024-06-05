@@ -1,1 +1,1 @@
-# react-tic-tac-toc
+# react-game-tic-tac-toe
