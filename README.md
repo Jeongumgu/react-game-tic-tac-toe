@@ -1,6 +1,6 @@
 # react-game-tic-tac-toe
 
-전 세계 270만 수강강사이자 Udemy의 TOP 강사인 Maximilian Schwarzmüller의 Udemy react 강의를 듣고 구현해본 틱택토 게임
+전 세계 270만 수강강사이자 Udemy의 TOP 강사인 Maximilian Schwarzmüller의 react 강의를 듣고 구현해본 틱택토 게임
 
 틱택토란?
 
